@@ -22,8 +22,8 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Run Semantic Release
+        
+      - name: Run Semantic Release as Root
         env:
           GITHUB_TOKEN: ${{ secrets.MY_SECRET_TOKEN }}
-        run: npx semantic-release
+        run: sudo npx semantic-release
