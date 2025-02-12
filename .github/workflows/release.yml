@@ -8,8 +8,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    name: Fix permissions for semantic-release
-  run: chmod +x ./node_modules/.bin/semantic-release
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
